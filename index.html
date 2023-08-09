@@ -17,13 +17,19 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
       <script src="https://cdn.optimizely.com/js/25047010100.js"></script>
-<meta http-equiv="Content-Security-Policy"
+<!-- <meta http-equiv="Content-Security-Policy"
 content="default-src 'none';
 frame-src https://a24764650604.cdn.optimizely.com https://a24764650604.cdn-pci.optimizely.com;
 script-src 'self' 'unsafe-inline' https://*.optimizely.com https://optimizely.s3.amazonaws.com https://cdn-assets-prod.s3.amazonaws.com https://*.segment.com https://www.googletagmanager.com;
 connect-src 'self' https://*.optimizely.com;
 img-src 'self' https://app.optimizely.com https://cdn.optimizely.com;
-style-src 'self' 'unsafe-inline'">
+style-src 'self' 'unsafe-inline'"> -->
+      <meta http-equiv="Content-Security-Policy"
+         content = "frame-src https://a24764650604.cdn.optimizely.com https://a24764650604.cdn-pci.optimizely.com;
+script-src 'self' https://*.optimizely.com https://optimizely.s3.amazonaws.com https://cdn-assets-prod.s3.amazonaws.com 'strict-dynamic';
+connect-src https://logx.optimizely.com https://*.optimizely.com; 
+img-src https://cdn.optimizely.com;
+style-src 'unsafe-inline';">
       
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
